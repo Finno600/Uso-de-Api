@@ -19,6 +19,24 @@ Dashboard full-stack desenvolvido para demonstrar integracao com API real, trata
 - Separacao de responsabilidades entre backend e frontend
 - Qualidade de entrega para portfolio tecnico (documentacao + deploy)
 
+## Como foi construido
+
+1. O backend consulta diferentes endpoints da API da SpaceX e normaliza os dados em um unico payload para o dashboard.
+2. O servidor aplica uma camada de cache de 10 minutos para reduzir latencia e chamadas repetidas na API externa.
+3. O frontend consome apenas um endpoint interno (`/api/dashboard`) e renderiza os blocos de interface com JavaScript puro.
+4. O deploy foi configurado no Render para publicacao continua a partir do repositorio GitHub.
+
+## Resultados do projeto
+
+- Aplicacao online em ambiente publico: https://uso-de-api.onrender.com/
+- Build de producao validado com TypeScript (`npm run build`)
+- Endpoint principal validado em runtime (`/api/dashboard`)
+- Estrutura pronta para evolucao (camada de dados no backend + camada de apresentacao no frontend)
+
+## Preview visual
+
+![Preview do dashboard](https://image.thum.io/get/width/1400/noanimate/https://uso-de-api.onrender.com/)
+
 Projeto de dashboard full-stack desenvolvido para demonstrar consumo de API externa, organizacao de dados no backend e experiencia visual no frontend.
 
 ## Visao geral
