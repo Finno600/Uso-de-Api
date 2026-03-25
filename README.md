@@ -54,6 +54,43 @@ npm run build
 npm start
 ```
 
+## Deploy no Render
+
+O projeto esta pronto para deploy no Render como Web Service.
+
+### Opcao 1. Deploy rapido pelo painel
+
+1. Acesse o painel do Render e clique em New +.
+2. Escolha Web Service.
+3. Conecte o repositorio `Finno600/Uso-de-Api`.
+4. Configure os campos principais:
+
+```text
+Name: uso-de-api
+Environment: Node
+Build Command: npm install && npm run build
+Start Command: npm start
+```
+
+5. Clique em Create Web Service.
+
+### Opcao 2. Deploy com Blueprint
+
+O repositorio tambem possui um arquivo `render.yaml`.
+
+1. No Render, clique em New +.
+2. Escolha Blueprint.
+3. Selecione o mesmo repositorio.
+4. O Render vai ler a configuracao automaticamente.
+
+### URL para portfolio
+
+Depois do deploy, adicione a URL publica no topo deste README para facilitar a avaliacao do recrutador. Exemplo:
+
+```text
+Demo online: https://uso-de-api.onrender.com
+```
+
 ## Estrutura
 
 ```text
