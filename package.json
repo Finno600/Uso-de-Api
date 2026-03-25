@@ -1,0 +1,30 @@
+{
+  "name": "uso-de-api",
+  "version": "1.0.0",
+  "description": "Dashboard full-stack com Node.js, TypeScript e JavaScript consumindo a API pública da SpaceX.",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [
+    "dashboard",
+    "nodejs",
+    "typescript",
+    "javascript",
+    "api",
+    "spacex"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

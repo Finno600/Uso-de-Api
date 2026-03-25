@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Deck API Dashboard</title>
+    <meta
+      name="description"
+      content="Dashboard full-stack com Node.js, TypeScript e JavaScript consumindo a API pública da SpaceX."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Node.js + TypeScript + JavaScript</p>
+          <h1>Flight Deck</h1>
+          <p class="hero-text">
+            Um dashboard que agrega indicadores da SpaceX em tempo real para demonstrar consumo de API,
+            organizacao de dados no backend e visualizacao interativa no frontend.
+          </p>
+        </div>
+        <div class="hero-panel" id="next-launch-panel">
+          <p class="panel-label">Proximo lancamento</p>
+          <div class="loading-block large"></div>
+        </div>
+      </header>
+
+      <main class="dashboard-grid">
+        <section class="panel metrics-panel">
+          <div class="panel-heading">
+            <p class="panel-label">Indicadores</p>
+            <h2>Visao geral</h2>
+          </div>
+          <div class="metrics-grid" id="metrics-grid">
+            <div class="loading-block"></div>
+            <div class="loading-block"></div>
+            <div class="loading-block"></div>
+            <div class="loading-block"></div>
+          </div>
+        </section>
+
+        <section class="panel chart-panel">
+          <div class="panel-heading">
+            <p class="panel-label">Historico</p>
+            <h2>Lancamentos por ano</h2>
+          </div>
+          <div class="bar-chart" id="yearly-chart"></div>
+        </section>
+
+        <section class="panel company-panel">
+          <div class="panel-heading">
+            <p class="panel-label">Companhia</p>
+            <h2>Snapshot da operacao</h2>
+          </div>
+          <div id="company-card">
+            <div class="loading-block large"></div>
+          </div>
+        </section>
+
+        <section class="panel rocket-panel">
+          <div class="panel-heading">
+            <p class="panel-label">Frota</p>
+            <h2>Uso por foguete</h2>
+          </div>
+          <div id="rocket-usage"></div>
+        </section>
+
+        <section class="panel missions-panel">
+          <div class="panel-heading">
+            <p class="panel-label">Missoes</p>
+            <h2>Ultimos lancamentos</h2>
+          </div>
+          <div class="missions-list" id="recent-launches"></div>
+        </section>
+      </main>
+
+      <p class="status-message" id="status-message" hidden></p>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
