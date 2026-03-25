@@ -1,5 +1,24 @@
 # Flight Deck API Dashboard
 
+## Apresentacao rapida
+
+Demo online: https://uso-de-api.onrender.com/
+
+Dashboard full-stack desenvolvido para demonstrar integracao com API real, tratamento de dados no backend e entrega de uma interface moderna e responsiva no frontend.
+
+### Destaques para recrutador
+
+- API externa real (SpaceX v4) consumida no backend
+- Node.js + TypeScript no servidor com agregacao e cache
+- Frontend em JavaScript puro com visualizacao de metricas e historico
+- Arquitetura simples, clara e pronta para evolucao
+
+### O que este projeto evidencia
+
+- Capacidade de transformar dados de API em visao executiva
+- Separacao de responsabilidades entre backend e frontend
+- Qualidade de entrega para portfolio tecnico (documentacao + deploy)
+
 Projeto de dashboard full-stack desenvolvido para demonstrar consumo de API externa, organizacao de dados no backend e experiencia visual no frontend.
 
 ## Visao geral
